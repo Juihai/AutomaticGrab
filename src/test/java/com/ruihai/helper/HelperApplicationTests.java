@@ -1,10 +1,10 @@
-package com.ruihai.automaticgrab;
+package com.ruihai.helper;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AutomaticgrabApplicationTests {
+class HelperApplicationTests {
 
     @Test
     void contextLoads() {
