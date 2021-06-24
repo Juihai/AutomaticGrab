@@ -49,7 +49,7 @@ import org.apache.commons.httpclient.protocol.ProtocolSocketFactory;
  * @author sunbaoming@dhgate.com
  *
  */
-public class HttpClientUtils {
+public class HttpClientUtil {
     private static final int sotimeout = 5000;
     private static final int connectTimeout = 1000;
 //    protected final static Log log = LogFactory.getLogger(DHgateHttpClient.class);
@@ -237,7 +237,7 @@ public class HttpClientUtils {
         paramterMap.put("signature", "06a95fe4caf0571e15245f553c5ed7f1");
 
         try {
-            String str = HttpClientUtils.postRequest(url, paramterMap, 1000);
+            String str = HttpClientUtil.postRequest(url, paramterMap, 1000);
             System.out.println(str);
         } catch (Exception e) {
             e.printStackTrace();
