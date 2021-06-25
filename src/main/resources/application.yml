@@ -12,7 +12,16 @@ spring:
       prefix: /
       suffix: .html
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/helper-dev?useUnicode=true&autoReconnect=true&allowMultiQueries=true&characterEncoding=utf-8&connectTimeout=1000&socketTimeout=180000&useSSL=false
     username: root
     password: admin123
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      #更新或者创建数据表结构
+      ddl-auto: update
+    #控制台显示SQL
+    show-sql: true
+stock.base_url: http://api.waditu.com
+stock.token: 9d9dbd5fd6e137c1420d07bf22d174af6c450629dcca991a46f8191d
+
